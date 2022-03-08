@@ -1,1 +1,7 @@
-<p>list-recipes works!</p>
+<h3>Liste de mes recettes</h3>
+
+<ul>
+  <li *ngFor="let recipe of allRecipes">
+    <app-recipe-item [recipe]="recipe" (deleteRecipe)="onDeleteRecipe($event)"></app-recipe-item>
+  </li>
+</ul>

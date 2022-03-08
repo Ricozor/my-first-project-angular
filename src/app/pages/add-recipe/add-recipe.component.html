@@ -9,9 +9,7 @@
     <label for="type">Nom de la recettte</label><br>
     <select id="type" name="type" ngModel required>
       <option value="">---</option>
-      <option value="starter">Entrée</option>
-      <option value="main">Plat</option>
-      <option value="dessert">Déssert</option>
+      <option *ngFor="let type of recipeTypes" [value]="type.value">{{ type.label }}</option>
     </select>
   </p>
   <p>

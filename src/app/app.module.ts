@@ -11,6 +11,7 @@ import { AddRecipeComponent } from './pages/add-recipe/add-recipe.component';
 import { HeaderComponent } from './components/organisms/header/header.component';
 import { FooterComponent } from './components/organisms/footer/footer.component';
 import { ListRecipesComponent } from './pages/list-recipes/list-recipes.component';
+import { RecipeItemComponent } from './components/molecules/recipe-item/recipe-item.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ListRecipesComponent } from './pages/list-recipes/list-recipes.componen
     HeaderComponent,
     FooterComponent,
     ListRecipesComponent,
+    RecipeItemComponent,
   ],
   imports: [
     FormsModule,
