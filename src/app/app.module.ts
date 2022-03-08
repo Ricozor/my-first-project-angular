@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AddRecipeComponent } from './pages/add-recipe/add-recipe.component';
 import { HeaderComponent } from './components/organisms/header/header.component';
 import { FooterComponent } from './components/organisms/footer/footer.component';
+import { ListRecipesComponent } from './pages/list-recipes/list-recipes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/organisms/footer/footer.component'
     HomeComponent,
     AddRecipeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ListRecipesComponent,
   ],
   imports: [
     FormsModule,
