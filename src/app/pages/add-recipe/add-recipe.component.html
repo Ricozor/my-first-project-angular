@@ -1,1 +1,22 @@
-<p>add-recipe works!</p>
+<h3>Ajouter une nouvelle recette</h3>
+
+<form #recipeForm="ngForm" (submit)="addRecipe(recipeForm)">
+  <p>
+    <label for="name">Nom de la recettte</label><br>
+    <input id="name" name="name" ngModel required>
+  </p>
+  <p>
+    <label for="type">Nom de la recettte</label><br>
+    <select id="type" name="type" ngModel required>
+      <option value="">---</option>
+      <option value="starter">Entrée</option>
+      <option value="main">Plat</option>
+      <option value="dessert">Déssert</option>
+    </select>
+  </p>
+  <p>
+    <label for="details">Détails</label><br>
+    <textarea id="details" name="details" ngModel required></textarea>
+  </p>
+  <button type="submit">Ajouter</button>
+</form>
